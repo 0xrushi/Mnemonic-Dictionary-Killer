@@ -14,4 +14,13 @@
     $('.col-lg-3').empty();
     $('.float-whats-app').remove();
 
+    document.body.addEventListener('keypress', e => {
+  if (e.key === 'ArrowRight') {
+    $(".slick-next").click()
+  }
+   if (e.key === 'ArrowLeft') {
+    $(".slick-prev").click()
+  }
+});
+
 })();
